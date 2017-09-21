@@ -1,0 +1,14 @@
+<div>
+	<h1>{{appTitle}}</h1>
+ 	<div>
+ 		<h3>to Northernlights</h3>
+ 	</div>
+ 	<div *ngIf = 'appStatus'>
+ 		<div *ngFor = 'let list of appList'>
+			<ul>
+ 				<li>{{list.Id}}</li>
+ 				<li>{{list.Name}}</li>
+ 			</ul> 			
+ 		</div>
+ 	</div>
+</div>
