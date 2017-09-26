@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { IProduct } from './product';
+import { IProduct } from './products';
 import { ProductService } from './products.service';
-import { appService } from './app.service';
+//import { appService } from './app.service';
 import { Http , Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
@@ -14,7 +14,7 @@ import 'rxjs/add/operator/map';
 
 export class AppComponent  { 
 	iproducts: IProduct[];
-	costructor(private _product: ProductService) {
+	constructor(private _product: ProductService) {
 	}
 
 	ngOnInit(): void {
