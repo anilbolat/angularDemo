@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent  { 
-	
+	Status: boolean = true;
+	clicked(event) {
+		this.Status = !this.Status;
+	}
 }
